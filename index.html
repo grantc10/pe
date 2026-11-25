@@ -41,24 +41,24 @@
     position: relative;
     height: calc(100vh - 76px);
     min-height: 640px;
-    background: url('hero.jpg') center 40% / cover no-repeat;
+    background: #2a2420 url('hero.jpg') center 54% / cover no-repeat;
     color: #fff;
     overflow: hidden;
   }
   .hero h1 {
-    position: absolute; top: 1.2vw; right: 2.5vw;
+    position: absolute; top: 3.8vw; right: 2.5vw;
     font-family: var(--serif); font-weight: 400;
-    font-size: clamp(56px, 10.5vw, 200px);
+    font-size: clamp(48px, 8.9vw, 170px);
     line-height: 1; text-align: right; white-space: nowrap;
   }
   .hero .script {
-    position: absolute; top: 17.5vw; right: 2.2vw;
+    position: absolute; top: 16vw; right: 2.2vw;
     font-family: var(--script); font-weight: 400;
-    font-size: clamp(64px, 11vw, 230px);
+    font-size: clamp(48px, 8.3vw, 170px);
     line-height: 1; white-space: nowrap;
   }
   .hero .tagline {
-    position: absolute; right: 2.5vw; bottom: 2.4vw;
+    position: absolute; right: 2.5vw; bottom: 3vw;
     font-family: var(--serif); font-weight: 400;
     font-size: clamp(26px, 3.75vw, 60px);
     line-height: 1.1; text-align: right;
@@ -68,6 +68,7 @@
   @media (max-width: 760px) {
     nav { height: auto; flex-wrap: wrap; padding: 14px 12px; gap: 6px 22px; }
     .hero { height: auto; min-height: 92vh; padding: 130px 20px 40px; display: flex; flex-direction: column; justify-content: flex-end; }
+    .hero { background-size: cover; background-position: center 40%; }
     .hero h1, .hero .script, .hero .tagline { position: static; text-align: right; white-space: normal; }
     .hero .script { margin-top: -8px; }
     .hero .tagline { margin-top: 18px; font-size: 26px; }
